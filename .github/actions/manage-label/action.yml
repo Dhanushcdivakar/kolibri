@@ -1,0 +1,15 @@
+name: 'Manage Labels for External Contributors'
+description: 'Add or remove labels when external contributors are assigned or unassigned.'
+
+inputs:
+  github_token:
+    description: 'GitHub Token for authentication'
+    required: true
+    default: ${{ secrets.GITHUB_TOKEN }}
+
+runs:
+  using: 'python'
+  main: 'manage_labels.py'
+
+# Add other configuration based on your requirements
+
